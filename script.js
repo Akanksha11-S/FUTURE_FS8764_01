@@ -8,7 +8,7 @@ const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("active");
-      observer.unobserve(entry.target); // ✅ prevents bugs
+      observer.unobserve(entry.target); 
     }
   });
 }, observerOptions);
